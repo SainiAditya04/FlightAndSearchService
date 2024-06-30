@@ -1,0 +1,20 @@
+{
+  "name": "flightsandsearch",
+  "version": "1.0.0",
+  "description": "This is the flight and search microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Flights",
+    "Search"
+  ],
+  "author": "Aditya Saini",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
