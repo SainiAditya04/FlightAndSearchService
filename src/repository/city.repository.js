@@ -32,12 +32,19 @@ class CityRepository{
 
     async updateCity(cityId, data){
         try{
-            const updatedCity = await City.update(data, {
-                where: {
-                    id: cityId
-                }
-            });
-            return updatedCity;
+            // the below approach won't return us the updated city
+            // It will only return if we are using Postgre, if we use returning: true
+            // const updatedCity = await City.update(data, {
+            //     where: {
+            //         id: cityId
+            //     }
+            // });
+            // return updatedCity;
+
+            const city = await City.findByPk(cityId);
+            city.name = data.name
+            await city.save();
+            return city;
         }
         catch(error){
             console.log("Error while updating the city!");
