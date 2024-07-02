@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "This is the flight and search microservice",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "npx nodemon src/index.js"
   },
@@ -16,6 +15,9 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "mysql2": "^3.10.1",
+    "nodemon": "^3.1.4",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
   }
 }
