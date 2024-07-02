@@ -2,5 +2,5 @@
 // in a single object, 
 
 module.exports = {
-    CityService: require('./city.service.js')
+    CityService: require('./city-service')
 }

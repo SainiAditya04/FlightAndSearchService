@@ -1,6 +1,7 @@
 const { CityService } = require('../services/index.js');
 
-const cityService = new CityService();
+
+const cityService = new CityService()
 
 const create = async (req, res) => {
     // whenever we create, its a POST request
