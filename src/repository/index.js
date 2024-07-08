@@ -4,6 +4,9 @@
 // if we have 10 repository then we need 10 import statements, but with this file
 // we can import them in a single statement 
 
+
 module.exports = {
-    CityRepository: require('./city.repository')
+    CityRepository: require('./city.repository'),
+    FlightRepository: require('./flight.repository'),
+    AirplaneRepository: require('./airplane.repository')
 }
