@@ -68,7 +68,12 @@ class FlightRepository {
 
     async updateFlight(flightId, data) {
         try {
-
+            await Flights.update(data, {
+                where: {
+                    id: flightId
+                }
+            });
+            return true;
         }
         catch (error) {
             console.log("Error in flights repository");
